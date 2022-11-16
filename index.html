@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="./src/dest/PasswordGenerator.js"></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="password-generator">
+        <div class="generated-pass">
+            <h1 id="pass-res"></h1>
+            <img src="./src/images/copy_icon_143028.svg" alt="Clipboard icon" id="clipboard-icon">
+        </div>
+        <div class="password-constraints">
+            <div class="char-length">
+                <p id="char-title">Character Length</p>
+                <p id="length-output">10</p>
+            </div>
+            <input type="range" min="7" max="16" value="7" class="slider">
+            <div class="pass-checkbox">
+                <label id="uppercase">
+                    <input type="checkbox" id="0">
+                    Include Uppercase letters
+                </label>
+                <br>
+                <label id="lowercase">
+                    <input type="checkbox" id="1">
+                    Include Lowercase letters
+                </label>
+                <br>
+                <label id="numbers">
+                    <input type="checkbox" id="2">
+                    Include Numbers
+                </label>
+                <br>
+                <label id="symbols">
+                    <input type="checkbox" id="3">
+                    Include Symbols
+                </label>
+            </div>
+            <div class="strength">
+                <p>STRENGTH</p>
+                <div class="strength-output">
+                    <p id="strength-desc">MEDIUM</p>
+                    <div class="levels">
+                        <input value="0" type="button"></input>
+                        <input value="1" type="button"></input>
+                        <input value="2" type="button"></input>
+                        <input value="3" type="button"></input>
+                    </div>
+                </div>
+            </div>
+            <button class="generate-pass">GENERATE</button>
+        </div>
+    </div>
+</body>
+
+</html>
